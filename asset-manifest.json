@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/snickers/static/css/main.9a5a6ea2.css",
-    "main.js": "/snickers/static/js/main.7b23f5c0.js",
+    "main.js": "/snickers/static/js/main.75d778c6.js",
     "static/js/787.c38b0444.chunk.js": "/snickers/static/js/787.c38b0444.chunk.js",
     "index.html": "/snickers/index.html",
     "main.9a5a6ea2.css.map": "/snickers/static/css/main.9a5a6ea2.css.map",
-    "main.7b23f5c0.js.map": "/snickers/static/js/main.7b23f5c0.js.map",
+    "main.75d778c6.js.map": "/snickers/static/js/main.75d778c6.js.map",
     "787.c38b0444.chunk.js.map": "/snickers/static/js/787.c38b0444.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9a5a6ea2.css",
-    "static/js/main.7b23f5c0.js"
+    "static/js/main.75d778c6.js"
   ]
 }
