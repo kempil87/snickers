@@ -13,7 +13,7 @@ export const Header = () => {
 
     return (
         <div className='container header'>
-            <Link to='/'>
+            <Link to='/snickers'>
                 <LogoSvg/>
             </Link>
             <div className='d-flex align-items-center'>
