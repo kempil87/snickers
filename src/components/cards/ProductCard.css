@@ -1,0 +1,60 @@
+
+.card-wrap{
+    transition: linear .3s;
+    cursor: pointer;
+    position: relative;
+    /*border: 1px solid blue;*/
+}
+.card-wrap:hover .product-image{
+    transform: scale(1.1);
+    transition: .25s ease-in;
+}
+
+.product-image{
+    width: 260px;
+    object-fit: cover;
+    transition: .3s ease-in;
+}
+.badge{
+    position: absolute;
+    bottom: 36%;
+    left: -10px;
+    background-color: black;
+    padding: 6px 10px;
+    color: white;
+    border-radius: 0;
+    font-weight: 400;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+.badge::before{
+    width: 8px;
+    height: 8px;
+    content: '';
+    position: absolute;
+    bottom: 26%;
+    left: -14px;
+    background-color: #ffffff;
+    padding: 6px 10px;
+    border-radius: 50%;
+}
+.name{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    margin: 8px;
+    max-width: 260px;
+}
+.price{
+    margin: 8px ;
+    font-weight: 500;
+}
+.sale-price{
+    margin: 8px 0;
+    color: #be1a30;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: line-through;
+    padding:3px 5px;
+    border-radius: 4px;
+}
+svg:hover path{
+    fill: rgba(0, 0, 0, 0.4);
+}
