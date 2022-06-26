@@ -1,52 +1,62 @@
-.clear-cart{
+.clear-cart {
     cursor: pointer;
 }
-.clear-cart:hover{
+
+.clear-cart:hover {
     opacity: .6;
 }
-.item-product h6{
+
+.item-product h6 {
     width: 36px;
     height: 36px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border:2px solid rgba(0,0,0,0.1);
+    border: 2px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     margin: 0 12px;
 }
-.item-product .circle-dec-disable{
+.item-product h6:last-child{
+    margin: 0 12px 0 0 ;
+}
+
+.circle-dec-disable {
     width: 36px;
     height: 36px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border:2px solid rgba(0,0,0,0.1);
+    border: 2px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     margin: 0 12px;
     cursor: not-allowed;
     pointer-events: none;
 }
-.item-product:hover .circle-delete{
+
+.item-product:hover .circle-delete {
     opacity: 1;
     transition: linear .2s;
 }
 
-.circle-inc{
-cursor: pointer;
-}
-.circle-dec{
-cursor: pointer;
+.circle-inc {
+    cursor: pointer;
 }
 
-.circle-delete{
-cursor: pointer;
+.circle-dec {
+    cursor: pointer;
+}
+
+.circle-delete {
+    cursor: pointer;
     opacity: 0;
     transition: linear .2s;
 }
-.amount{
+
+.amount {
     font-size: 12px;
 }
-.badge-cart{
+
+.badge-cart {
     text-align: center;
     background-color: black;
     padding: 6px 10px;
@@ -56,38 +66,76 @@ cursor: pointer;
     font-weight: 400;
     font-family: 'Kdam Thmor Pro', sans-serif;
 }
-.sale-price-cart{
+
+.sale-price-cart {
     margin: 8px 0;
     color: #be1a30;
     font-size: 13px;
     font-weight: 600;
     text-decoration: line-through;
-    padding:3px 5px;
+    padding: 3px 5px;
     border-radius: 4px;
 }
-.price-cart{
+
+.price-cart {
     font-size: 20px;
     font-weight: 600;
+    margin-bottom: 0;
 }
 
 .empty-cart {
     margin-top: 55px;
     transition: ease .2s;
 }
+
 .empty-cart a:hover {
-    box-shadow:  0 0 15px black;
+    box-shadow: 0 0 15px black;
     transition: ease .2s;
 }
 
-.empty-cart span{
+.empty-cart span {
     font-size: 15px;
     color: rgba(0, 0, 0, 0.5);
 }
-.empty-cart a{
+
+.empty-cart a {
     letter-spacing: 1.5px;
     margin-top: 16px;
     text-decoration: none;
     padding: 6px 16px;
     background-color: black;
     color: rgb(255, 255, 255);
+}
+
+@media (min-width: 0) and (max-width: 575px) {
+    .empty-cart span {
+        text-align: center;
+    }
+
+    .clear-cart {
+        font-size: 12px;
+    }
+
+    .cart-top h5 {
+        font-size: 14px;
+    }
+    .cart-img{
+        width: 70px;
+        object-fit: contain;
+    }
+    .badge-cart{
+        font-size: 13px;
+        padding: 2px 4px;
+        width: 80px;
+    }
+    .price-cart{
+        font-size: 15px;
+    }
+    .sale-price-cart{
+        font-size: 11px;
+    }
+    .price-wrap{
+        display: flex;
+        align-items: center;
+    }
 }

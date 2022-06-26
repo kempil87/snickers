@@ -19,6 +19,7 @@ export const ProductCard = ({badge, image, name, price, _id, salePrice, addToCar
             <div className="img-block mb-3">
                 <div className="img-wrap d-flex justify-content-center">
                     <img className="product-image" src={image} alt='product-image'/>
+                    <img className="product-image-next"  src='https://static.street-beat.ru/upload/resize_cache/iblock/697/500_500_1/6976cdb08497092255d3392b421e9b71.jpg' alt='product-image'/>
                 </div>
             </div>
             <h6 className='name'>{name}</h6>

@@ -2,4 +2,7 @@
     .home-title{
       text-align: center;
     }
+    .card-content{
+        justify-content: center;
+    }
 }

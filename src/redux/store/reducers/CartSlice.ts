@@ -5,12 +5,14 @@ interface CartState {
     cart: ICart[],
     count: number,
     totalPrice: number
+    notification: boolean
 }
 
 const initialState: CartState = {
     cart: [],
     count: 0,
-    totalPrice: 0
+    totalPrice: 0,
+    notification: false
 };
 
 export const cartSlice = createSlice({
@@ -40,6 +42,7 @@ export const cartSlice = createSlice({
             state.count--
             localStorage.setItem('cart', JSON.stringify(state))
         },
+
         removeItemPosition(state, action: PayloadAction<ICart>) {
             const incCount = state.cart.find((i) => i._id === action.payload._id)!.countItem || 0
             state.cart = state.cart.filter((item) => item._id !== action.payload._id)
@@ -59,6 +62,13 @@ export const cartSlice = createSlice({
             state.cart = action.payload.cart
             state.count = action.payload.count
             state.totalPrice = action.payload.totalPrice
+        },
+        showNotification(state){
+        state.notification = true
+        },
+
+        hideNotification(state){
+        state.notification = false
         }
     }
 })

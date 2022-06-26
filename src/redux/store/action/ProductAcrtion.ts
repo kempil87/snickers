@@ -5,6 +5,7 @@ import {IProduct} from "../../types/IProduct";
 
 
 export const fetchProducts = () => async (dispatch: AppDispatch) => {
+
     try {
         dispatch(productSlice.actions.productFetching())
         const res = await api.get<IProduct[]>('/products')

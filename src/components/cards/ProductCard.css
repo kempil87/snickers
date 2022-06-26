@@ -3,11 +3,22 @@
     transition: linear .3s;
     cursor: pointer;
     position: relative;
-    /*border: 1px solid blue;*/
 }
 .card-wrap:hover .product-image{
-    transform: scale(1.1);
-    transition: .25s ease-in;
+    /*transform: scale(1.1);*/
+    /*transition: .25s ease-in;*/
+    opacity: 0;
+    transition: opacity linear .3s;
+}
+.product-image-next{
+    opacity: 0;
+    position: absolute;
+    width: 260px;
+    transition: opacity linear .3s;
+}
+.card-wrap:hover .product-image-next{
+    opacity: 1;
+    transition: opacity linear .3s;
 }
 
 .product-image{
@@ -36,6 +47,7 @@
     background-color: #ffffff;
     padding: 6px 10px;
     border-radius: 50%;
+
 }
 .name{
     font-family: 'Kdam Thmor Pro', sans-serif;

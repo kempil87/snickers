@@ -4,14 +4,16 @@ import {createSlice, PayloadAction} from "@reduxjs/toolkit";
 
 interface ProductState {
     product: IProduct[],
+    searchProducts: string,
     isLoading: boolean,
     error: string
 }
 
 const initialState: ProductState = {
     product: [],
+    searchProducts: '',
     isLoading: false,
-    error: ""
+    error: "",
 };
 
 export const productSlice = createSlice({
@@ -21,14 +23,17 @@ export const productSlice = createSlice({
         productFetching(state) {
             state.isLoading = true
         },
-        productFetchingSuccess(state,action:PayloadAction<IProduct[]>) {
+        productFetchingSuccess(state, action: PayloadAction<IProduct[]>) {
             state.isLoading = false
-            state.error =''
+            state.error = ''
             state.product = action.payload
         },
-        productFetchingError(state,action:PayloadAction<string>) {
+        productFetchingError(state, action: PayloadAction<string>) {
             state.isLoading = false
-            state.error =action.payload
+            state.error = action.payload
+        },
+        searchProduct(state, action: PayloadAction<string>) {
+            state.searchProducts = action.payload
         },
     }
 })
